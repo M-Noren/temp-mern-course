@@ -1,5 +1,5 @@
 import { FormRow, SubmitBtn } from "../components";
-import Wrapper from "../assets/wrappers/DashboardFormPage";
+import Wrapper from "../assets/Wrappers/DashboardFormPage";
 import { useOutletContext } from "react-router-dom";
 import { Form } from "react-router-dom";
 import customFetch from "../utils/customFetch";
