@@ -1,4 +1,4 @@
-import Wrapper from "../assets/wrappers/JobInfo";
+import Wrapper from "../assets/Wrappers/JobInfo";
 
 const JobInfo = ({ icon, text }) => {
   return (
