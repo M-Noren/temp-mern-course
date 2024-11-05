@@ -25,7 +25,7 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-app.use(express.static(path.resolve(__dirname, "./public")));
+app.use(express.static(path.resolve(__dirname, "./client/dist")));
 
 import { authenticateUser } from "./middleware/authMiddleware.js";
 app.use("/api/v1/jobs", authenticateUser, jobRouter);
@@ -34,7 +34,7 @@ app.use("/api/v1/auth", authRouter);
 
 // Point server.js to index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./public", "index.html"));
+  res.sendFile(path.resolve(__dirname, "./client/dist", "index.html"));
 });
 
 //Error Middleware
